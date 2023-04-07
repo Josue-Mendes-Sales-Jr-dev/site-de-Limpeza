@@ -1,7 +1,6 @@
 import {Container,Box} from "./styled"
 import { Link } from "react-router-dom"
 import Image from "../../../assets/imgs/pexels01.jpg"
-import {BoxProgress} from "./BoxProgress/index"
 
 export const Section04=()=>{
     return(
@@ -30,24 +29,7 @@ export const Section04=()=>{
                         </p>
                     </div>
                 </div>
-                <div className="caixa">
-                    <div>
-                        <BoxProgress porcentText="92"/>
-                        <p>Incêndios</p>
-                    </div>
-                    <div>
-                        <BoxProgress porcentText="70"/>
-                        <p>Cheiros desagradáveis dentro da habitação</p>
-                    </div>
-                    <div>
-                        <BoxProgress porcentText="87"/>
-                        <p>Retorno de fumo para dentro da habitação</p>
-                    </div>
-                    <div>
-                        <BoxProgress porcentText="82"/>
-                        <p>Ingestão por monóxito de carbono</p>
-                    </div>
-                </div>
+                
             </Box>
         </Container>
     )
