@@ -49,9 +49,12 @@ export const Section01=styled.section`
     top: 250px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 850px) {
+    .local{
+      z-index:1;
+    }
     video{
-      height: 150vh;
+      height: 100vh;
     }
   }
 

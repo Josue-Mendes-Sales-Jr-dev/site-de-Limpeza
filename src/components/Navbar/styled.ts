@@ -54,9 +54,7 @@ export const Container=styled.div`
             display:none;
         }
      }
-     @media screen and (max-width:850px){
-       opacity: 0;
-    }
+    
 `
 export const BoxSpan=styled.div`
         display:flex;
@@ -95,7 +93,12 @@ export const Menu=styled.div`
     align-items:center;
     justify-content:space-around;
     
-     
+    @media screen and (max-width:850px){
+        visibility: hidden;
+    
+
+}
+    
    
 `
 export const Position=styled.div`
@@ -121,4 +124,54 @@ export const Position=styled.div`
         padding: 0 5px;;
        }
      }
+     @media screen and (max-width:850px){
+      background-color: black;
+      min-height: 140px;
+      margin-top: -20px;
+      
+      a{
+        color: white;
+        padding: 0 20px;
+      }
+    }
+    @media screen and (max-width:850px){
+    
+    .menu{flex-direction: column;
+    height: 30em;
+    margin-top: 350px;
+    justify-content: center;
+    
+    a{
+        margin-bottom: 2rem;
+    }
+      visibility: visible;
+    }
+}
+`
+export const Hamburguer=styled.div`
+  visibility: hidden;
+ @media screen and (max-width:850px){ display: flex;
+    visibility: visible;
+   align-items: center;
+   justify-content: center;
+   width: 30px;
+   height: 30px;
+  
+   .close{
+    display: none;
+   }
+
+   .no-close{
+    display: flex;
+    font-size: 2rem;
+   }
+
+   .Open{
+    display: flex;
+    font-size: 2rem;
+   }
+   .no-open{
+    display: none;
+   }
+   }
 `

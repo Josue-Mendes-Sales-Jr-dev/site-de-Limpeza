@@ -1,4 +1,4 @@
-import { Container,Menu,Box,BoxSpan,Position } from "./styled"
+import { Container,Menu,Box,BoxSpan,Position,Hamburguer } from "./styled"
 import { Link } from "react-router-dom"
 import {BsInstagram}from "react-icons/bs"
 import {BsFacebook}from "react-icons/bs"
@@ -6,10 +6,30 @@ import {BsYoutube}from "react-icons/bs"
 import {BsSearch}from "react-icons/bs"
 import {BsFillTelephoneFill}from "react-icons/bs"
 import {MdOutlineWatchLater}from "react-icons/md"
+import {GiHamburgerMenu}from "react-icons/gi"
+import {GrClose}from "react-icons/gr"
 import {AiOutlineMail}from "react-icons/ai"
+import { useCallback } from "react"
 
 export const Navbar=()=>{
-    return(
+    const handleOpenMenu=useCallback(()=>{
+       const active=document.querySelector('.Open')
+       const desActive=document.querySelector('#Closed')
+       const menu=document.querySelector('#menu')
+
+       if( active?.classList.contains("Open")){
+          active?.classList.toggle('no-open')
+          desActive?.classList.toggle("no-close")
+        }
+
+    if(desActive?.classList.contains('no-close')){
+        menu?.classList.add('menu')
+    }else{
+        menu?.classList.remove('menu')
+    }
+        },[])
+
+ return(
         <Container>
             <header>
             <BoxSpan>
@@ -31,7 +51,7 @@ export const Navbar=()=>{
                 
                 <Position>
                     <Link to="/">Logo</Link>
-                    <Menu>
+                    <Menu id="menu">
                         <Link to="/About">Quem somos</Link>
                         <Link to="/">Serviços</Link>
                         <Link to="/Portifolio">Portifolio</Link>
@@ -39,6 +59,10 @@ export const Navbar=()=>{
                         <Link to="/Legislation">Legislação</Link>
                         <Link to="/budget">Orçamento</Link>
                     </Menu>
+                    <Hamburguer  onClick={handleOpenMenu}>
+                        <span className="Open"><GiHamburgerMenu/></span>
+                        <span className="close" id="Closed"><GrClose/></span>
+                    </Hamburguer>
                     <Link to='/'><BsSearch/></Link>
                 </Position>
             </Box>
