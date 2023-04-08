@@ -24,7 +24,16 @@ export const Container=styled.div`
     align-items:center;
     background-color: var(--graySite);
   }
-  
+  @media screen and (max-width:420px){
+    width: 360px;
+  .b{
+    width: 100%;
+    p{
+      width:70% ;
+    }
+  }
+
+}
 `
 
 export const Box=styled.div`
@@ -43,6 +52,11 @@ export const Box=styled.div`
    border-radius: 5%;
    overflow: hidden;
   }
+  @media screen and (max-width:420px){
+   .map{
+    width: 70%;
+   }
+}
 `
 export const Form=styled.div`
   .form{
@@ -86,4 +100,15 @@ export const Form=styled.div`
         font-size: 1.2rem;
     }
   }
+  @media screen and (max-width:420px){
+    width: 14rem;
+    input{
+      width: 13rem;
+      ::placeholder{
+        font-size: 1rem;
+      }
+    }
+    .btnSubmit{
+    width: 13rem;}
+}
 `

@@ -45,6 +45,17 @@ export const Container=styled.div`
         opacity:.6;
     }
   }
+  @media screen and (max-width:420px){
+    .tarja{
+      height: 16rem;
+      h3{font-size:1rem}
+    }
+    .tarja2{
+      height: 16rem;
+      h3{font-size:1rem}
+    }
+        
+      }
 
 `
 export const Box=styled.div`
@@ -58,5 +69,15 @@ export const Box=styled.div`
     display: flex;
   align-items: center;
   flex-direction: column;
+  }
+  @media screen and (max-width:420px){
+    width: 70%;
+    font-size: 1rem;
+    gap: 2rem;
+   ul{ 
+    font-size: 1rem;
+    justify-content: center;
+    li{font-size: 1rem;}
+  }
   }
 `

@@ -14,14 +14,16 @@ export const Home =()=>{
               <source src={video} type="video/mp4"/>
           </video>
           <TextBox>
-              <p className="p01">LIMPEZA PROFISSIONAL</p>
-             <h2 className="h01"><Link to="/">Chaminés</Link></h2>
-             <h2 className="h02"><Link to="/">Telhados</Link> </h2>
-             <h2 className="h03"><Link to="/">Alerozes</Link></h2>
-             <div className="LBox">
-              <Link className="BTNServices" to="/">Serviços</Link>
-              <Link className="BTNOrcament" to="/">Pedir orçamento</Link>
-             </div>
+              <div className="local">
+                  <p className="p01">LIMPEZA PROFISSIONAL</p>
+                               <h2 className="h01"><Link to="/">Chaminés</Link></h2>
+                               <h2 className="h02"><Link to="/">Telhados</Link> </h2>
+                               <h2 className="h03"><Link to="/">Alerozes</Link></h2>
+                               <div className="LBox">
+                  <Link className="BTNServices" to="/">Serviços</Link>
+                  <Link className="BTNOrcament" to="/">Pedir orçamento</Link>
+                               </div>
+              </div>
           </TextBox>
          </Section01>
          <Section02/>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container=styled.section`
   width: 100%;
-  height:100%;
+   min-height:80vh;
   background-color:#FFFFFF;
   padding-bottom:7rem;
   .text{
@@ -25,21 +25,44 @@ export const Container=styled.section`
       text-align:center;
     }
   }
+  @media screen and (max-width:420px){
+    .text{h1{
+      font-size:2rem;
+      font-weight:500;
+      color:gray;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  }
+  
+  
 `
 export const TextBoxS02=styled.section`
   display:flex;
   width: 100%;
+  min-height: 100vh;
   align-items:center;
   justify-content:space-around;
   flex-wrap:wrap;
-  
-
   img{
     width: 25%;
     height: 22.5rem;
+    
   }
+  
+@media screen and (max-width:1050px){
+  flex-direction: column;
+  gap: 4rem;
+  img{
+    width: 50%;
+    height: 22rem;
+  }
+}
 
-  .part1{
+
+ .part1{
   width: 26%;
   display:flex;
   align-items:center;
@@ -78,5 +101,21 @@ export const TextBoxS02=styled.section`
      }
     }
    }
+  }
+     
+  @media screen and (max-width:420px){
+    img{
+      width: 75%;
+      border-radius: 5px;
+    }
+    .part1{
+      width: 80%;
+      .part2{
+        width: 100%;
+        span{
+        display: none;
+     }
+      }
+    }
   }
 `

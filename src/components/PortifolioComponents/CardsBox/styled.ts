@@ -21,6 +21,14 @@ export const Container=styled.div`
     width: 22rem;
     height:25rem;
   }
+  @media screen and (max-width:420px) {
+   width: 16rem;
+   height: 20rem;
+   img{
+    width: 16rem;
+    height: 20rem;
+   }
+}
   .box{
     display: none;
   }

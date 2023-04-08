@@ -6,7 +6,7 @@ export const About=()=>{
     return(
         <Container>
             <Title text1="Quem" text2="Somos"/>
-            <div>
+            <div className="TextP">
                 <p>
                     <strong>
                     LIMPEZA E MANUTENÇÃO DE TODO O TIPO DE CHAMINÉS, TELHADOS E ALGEROZES.

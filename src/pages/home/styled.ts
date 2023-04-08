@@ -25,21 +25,34 @@ export const Container=styled.div`
   width:100%;
   height: 100%;
   margin-top:-145px;
-  position:relative;
 
 
 `
 export const Section01=styled.section`
-  height:100%;
+  height:100vh;
+  margin-top: -200px;
   background-color:#131313;
-  
+  position:relative;
   width: 100vw;
   overflow:hidden;
   video{
     opacity:0.5;
-    width: 100%;
-    height: 100%;
+     height: 100vh;
+     width: 100vw;
+     object-fit: fill;
+  }
+  .local{
+    width:90%;
+    height: 90%;
+    position: absolute;
+    z-index: 3;
+    top: 250px;
+  }
 
+  @media screen and (max-width: 600px) {
+    video{
+      height: 150vh;
+    }
   }
 
 `
@@ -48,7 +61,6 @@ export const TextBox=styled.div`
  flex-direction:column;
  padding:0 30px;
  gap:1rem;
- position:absolute;
  top:255px;
  width: 40%;
  height: 40%;
@@ -113,4 +125,7 @@ export const TextBox=styled.div`
   
  }
  }
+
+ 
+     
 `

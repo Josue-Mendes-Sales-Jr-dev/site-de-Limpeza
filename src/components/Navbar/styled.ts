@@ -7,6 +7,7 @@ export const Container=styled.div`
     align-items:center;
     justify-content:space-around;
     flex-direction:column;
+    flex-wrap: wrap;
     color: white;
    
     
@@ -45,8 +46,17 @@ export const Container=styled.div`
             color: orange;
         }
         }
+     }}
+    }
+     @media screen and (max-width:1050px){
+        height: 160px;
+        header{
+            display:none;
+        }
      }
-     
+     @media screen and (max-width:850px){
+       opacity: 0;
+    }
 `
 export const BoxSpan=styled.div`
         display:flex;
@@ -84,6 +94,7 @@ export const Menu=styled.div`
     display:flex;
     align-items:center;
     justify-content:space-around;
+    
      
    
 `
@@ -98,10 +109,16 @@ export const Position=styled.div`
 
      
      a{ color: var(--blackSite);
-        font-size:1.3rem;
+        font-size:1.25rem;
         text-decoration:none;
         :hover{
             color: orange;
         }
+     }
+     @media screen and (max-width:1050px){
+       a{
+        font-size: 1.1rem;
+        padding: 0 5px;;
+       }
      }
 `

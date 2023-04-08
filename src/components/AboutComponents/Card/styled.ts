@@ -27,4 +27,14 @@ export const Container=styled.div`
     height:40vh;
     border:5px solid gray;
   }
+  @media screen and (max-width:850px) {
+    width: 70vw;
+    
+    .Tbox{
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+  }
 `

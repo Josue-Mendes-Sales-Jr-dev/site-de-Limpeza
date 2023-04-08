@@ -22,7 +22,9 @@ export const Section02=()=>{
                   </div>
                    
               </div>
+              
               <img src={Image02} alt="imag" />
+
               <div className="part1" >
                   <div className="part2">
                     <Link to="/"><span><ImCheckboxChecked/></span><p>Girândolas e chapéus</p></Link>

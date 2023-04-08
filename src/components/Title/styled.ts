@@ -18,5 +18,11 @@ export const Container=styled.div`
           animation: ${TranslateY} 1s linear;
           color: var(--greenSite);
      }
-
+     @media screen and (max-width:420px){
+        h1{
+          flex-direction: column;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+     }
 `

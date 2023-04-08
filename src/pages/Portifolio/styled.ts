@@ -39,6 +39,12 @@ export const Box=styled.div`
         }
        }
     }
+    @media screen and (max-width:950px){
+        ul{
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+    }
 `
 export const CardsBox=styled.div`
        margin: 2rem 0;

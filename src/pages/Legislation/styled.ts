@@ -53,4 +53,14 @@ export const Container=styled.div`
   }
 
   }
+  @media screen and (max-width:420px){
+    h2{
+      font-size: 1.2rem;
+      text-align:justify;
+    }
+    .box{
+      width: 70%;
+    }
+    
+  }
 `

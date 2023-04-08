@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-   width:100vw;
-   height:400px;
+   width:100%;
+   height:100%;
    display:flex;
    align-items:center;
    justify-content:center;
    flex-direction:column;
    color:white;
+   
 `
 export const Box=styled.div`
    width:100%;
@@ -18,6 +19,7 @@ export const Box=styled.div`
    justify-content:space-around;
    .box{
     width:80%;
+    height: 100%;
     display:flex;
    align-items:center;
    justify-content:space-around;
@@ -67,6 +69,25 @@ export const Box=styled.div`
        }
      }
    }
+ 
+      @media screen and (max-width:850px) {
+         min-height:100vh;
+
+        
+         .box{
+           
+            flex-direction: column;
+            .part1{
+            width: 100%;
+            text-align: center;
+            p{
+               width: 100%;
+               text-align: center;
+            }
+         }
+         }
+      }   
+      
 `
 export const BoxFooter=styled.div`
    width: 100vw;
@@ -79,4 +100,5 @@ export const BoxFooter=styled.div`
    justify-content:center;
    flex-direction:column;
    padding:0 50px;
+   
 `

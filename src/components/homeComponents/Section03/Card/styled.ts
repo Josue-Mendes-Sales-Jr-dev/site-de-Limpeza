@@ -16,7 +16,12 @@ export const Container=styled.div`
   p{
     text-align:center;
   }
+  @media screen and (max-width:420px){
+    width:18rem;
+  }
+  
 `
+
 export const BoxCards=styled.div`
   height:14rem;
   width:22rem;
@@ -26,6 +31,9 @@ export const BoxCards=styled.div`
   flex-direction:column;
   padding:2rem;
   border:none;
+  @media screen and (max-width:420px){
+    width:18rem;
+  }
   h4{   
         text-transform:uppercase;
         font-size:1.6rem;

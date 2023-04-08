@@ -11,7 +11,7 @@ export default createGlobalStyle`
     list-style-type:none;
   }
   html,body,:root{
-    height:100%;
+    min-height:100vh;
     background:#FafaF1;
     font-family: 'Montserrat', sans-serif;
     --greenSite:#00A551;

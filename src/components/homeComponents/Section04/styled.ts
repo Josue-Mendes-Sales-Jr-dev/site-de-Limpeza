@@ -5,21 +5,34 @@ export const Container=styled.div`
   flex-direction:row;
   align-items:center;
   justify-content:center;
-  height: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
   margin: 100px 0;
   img{
     width:50%;
     height: 50%;
     padding:0 30px
   }
+  @media screen and (max-width:950px){
+   gap: 4rem;
+   
+  img{
+    width: 70%;
+    border-radius: 40px;
+  }
+}
 
-`
+ `
 export const Box=styled.div`
    width:45%;
    display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  @media screen and (max-width:950px){
+    width: 80%;
+  }
    h2{
     width: 80%;
     font-size:2.5rem;
@@ -47,4 +60,7 @@ export const Box=styled.div`
     width: 80%;
     margin-bottom: 4rem;
    }
+
+   
+    
 `
