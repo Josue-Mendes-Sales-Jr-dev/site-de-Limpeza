@@ -141,7 +141,7 @@ export const Position=styled.div`
     margin-top: 350px;
     justify-content: center;
     
-    a{
+    a{  
         margin-bottom: 2rem;
     }
       visibility: visible;
@@ -164,6 +164,7 @@ export const Hamburguer=styled.div`
    .no-close{
     display: flex;
     font-size: 2rem;
+    
    }
 
    .Open{

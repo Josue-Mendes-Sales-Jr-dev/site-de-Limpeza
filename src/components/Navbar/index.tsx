@@ -7,7 +7,7 @@ import {BsSearch}from "react-icons/bs"
 import {BsFillTelephoneFill}from "react-icons/bs"
 import {MdOutlineWatchLater}from "react-icons/md"
 import {GiHamburgerMenu}from "react-icons/gi"
-import {GrClose}from "react-icons/gr"
+import {AiOutlineClose}from "react-icons/ai"
 import {AiOutlineMail}from "react-icons/ai"
 import { useCallback } from "react"
 
@@ -60,8 +60,8 @@ export const Navbar=()=>{
                         <Link to="/budget">Orçamento</Link>
                     </Menu>
                     <Hamburguer  onClick={handleOpenMenu}>
-                        <span className="Open"><GiHamburgerMenu/></span>
-                        <span className="close" id="Closed"><GrClose/></span>
+                        <span className="Open"><GiHamburgerMenu /></span>
+                        <span className="close" id="Closed"><AiOutlineClose style={{color:"white"}} /></span>
                     </Hamburguer>
                     <Link to='/'><BsSearch/></Link>
                 </Position>
