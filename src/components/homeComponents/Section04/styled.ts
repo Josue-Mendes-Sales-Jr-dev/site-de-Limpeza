@@ -35,7 +35,7 @@ export const Box=styled.div`
   }
    h2{
     width: 80%;
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:550;
     padding-bottom:2.5rem;
    }

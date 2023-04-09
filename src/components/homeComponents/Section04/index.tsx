@@ -7,7 +7,7 @@ export const Section04=()=>{
         <Container>
             <img src={Image} alt="" />
             <Box>
-                <h2>Porquê limpar?</h2>
+                <h2>Por que limpar?</h2>
                 <ul>
                     <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maxime quas, inventore aliquid asperiores, molestiae consequatur, quaerat repudiandae voluptatibus possimus officia quod ad earum provident eaque laborum voluptas. 
                         Explicabo, laboriosam!</li>
