@@ -19,8 +19,9 @@ export const Budget=()=> {
         <Container>
             <Title text1="" text2="Orçamento"/>
             <div className="CBox">
-                <div className="b">
-                <p>Precisa da nossa ajuda? Se tem alguma questão não hesite em contactar-nos.
+                <div className="P">
+                <p>Precisa da nossa ajuda? Se 
+                  tem alguma questão não hesite em contactar-nos.
                 </p>
                 </div>
                 <Box>

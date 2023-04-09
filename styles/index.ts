@@ -11,6 +11,7 @@ export default createGlobalStyle`
     list-style-type:none;
   }
   html,body,:root{
+    max-width: 100vw;
     min-height:100vh;
     background:#FafaF1;
     font-family: 'Montserrat', sans-serif;

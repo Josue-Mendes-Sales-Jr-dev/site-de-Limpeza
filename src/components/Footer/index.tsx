@@ -40,16 +40,7 @@ export const Footer=()=>{
                   <BsYoutube className="icon"/>
               </div>
               </div>
-              <div className="part1">
-              <h4>Contactos</h4>
-              <p>
-                Lorem ipsum dolor sit
-                 amet consectetur
-                  adipisicing elit.     
-                  adipisicing elit.     
-                  adipisicing elit.     
-              </p>
-              </div>
+             
           </div>
         </Box>
         <BoxFooter>

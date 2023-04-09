@@ -87,7 +87,22 @@ export const Box=styled.div`
          }
          }
       }   
-      
+      @media screen and (max-height: 480px) {
+         min-height:150vh;
+         padding: 30px 0;
+     .box{
+      flex-direction: row;
+      flex-wrap:wrap;
+      .part1{
+            width: 80%;
+            text-align: center;
+            p{
+               width:80%;
+               text-align: center;
+            }
+     }
+    
+  }
 `
 export const BoxFooter=styled.div`
    width: 100vw;

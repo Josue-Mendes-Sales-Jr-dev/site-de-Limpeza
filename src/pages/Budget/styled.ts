@@ -1,39 +1,32 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items:center;
   flex-direction: column;
   .CBox{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
-  padding: 40px 0;
-  }
-  .b{
-    width: 100%;
-    height: 20rem;
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: var(--graySite);
-  }
-  @media screen and (max-width:420px){
-    width: 360px;
-  .b{
-    width: 100%;
-    p{
-      width:70% ;
+    flex-direction: column;
+    width: 90%;
+    .P{
+      display: flex;
+    justify-content: center;
+    align-items:center;
     }
+    p{
+     
+      text-align: center;
+      width: 80%;
+      height: 2rem;
+    }
+    padding: 30px 0;
   }
-
-}
+ 
 `
 
 export const Box=styled.div`
@@ -52,16 +45,23 @@ export const Box=styled.div`
    border-radius: 5%;
    overflow: hidden;
   }
-  @media screen and (max-width:420px){
-   .map{
-    width: 70%;
-   }
-}
+  @media screen and (max-width:850px){
+    width: 100%;
+    .map{
+      width: 80%;
+    }
+  }
+  @media screen and (max-height:420px){
+    padding-bottom: 80px;
+  }
+
 `
 export const Form=styled.div`
   .form{
   width:30rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding:30px 0;
   background: none;
@@ -100,15 +100,53 @@ export const Form=styled.div`
         font-size: 1.2rem;
     }
   }
-  @media screen and (max-width:420px){
-    width: 14rem;
-    input{
-      width: 13rem;
-      ::placeholder{
-        font-size: 1rem;
-      }
+  @media screen and (max-height:420px){
+    .form{
+      padding: 0;
+      gap: 0.5rem;
     }
-    .btnSubmit{
-    width: 13rem;}
-}
+  input{
+    width: 30rem;
+    ::placeholder{
+        color: gray;
+        font-size: .9rem;
+    }
+  }
+  .btnSubmit{
+    width: 150px;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  }
+  @media screen and (max-width:420px){
+    .form{
+    width:28rem;
+    padding:30px 0;
+    gap: 1rem;
+  }
+
+
+    input{
+    height: 2rem;
+    padding: 0 10px;
+    border-bottom: 2px solid gray;
+    border-radius: 2px;
+    ::placeholder{
+        color: gray;
+        font-size: 1rem;
+    }
+  }
+
+
+  .btnSubmit{
+    width: 150px;
+    height: 2.5rem;
+    font-size: 1.1rem;
+   
+    margin: 20px 0;
+  }
+
+  }
+ 
 `

@@ -50,14 +50,26 @@ export const Section01=styled.section`
   }
 
   @media screen and (max-width: 850px) {
+   
     .local{
       z-index:1;
-    }
+    } width: 100%;
     video{
       height: 100vh;
     }
   }
+  @media screen and (max-height: 480px) {
+    height: 120vh;
+    .local{
+      z-index:1;
+    } width: 100%;
+    video{
+      height: 120vh;
+    }
 
+}
+
+ 
 `
 export const TextBox=styled.div`
  display:flex;
@@ -131,4 +143,26 @@ export const TextBox=styled.div`
 
  
      
+
+ @media screen and (max-height: 480px) {
+  p{
+    font-size:1.2rem;
+
+  }
+   h2{
+    font-size:1.2rem;
+
+   }
+
+   .LBox{
+    .BTNServices{
+   padding: .5rem .5rem;
+   font-size:.7rem;
+ }
+ .BTNOrcament{
+  padding: .5rem .5rem;
+  font-size:.7rem;
+ }}
+
+}
 `

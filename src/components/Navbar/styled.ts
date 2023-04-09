@@ -126,8 +126,8 @@ export const Position=styled.div`
      }
      @media screen and (max-width:850px){
       background-color: black;
-      min-height: 140px;
-      margin-top: -20px;
+      min-height: 80px;
+      margin-top: -80px;
       
       a{
         color: white;
@@ -143,6 +143,18 @@ export const Position=styled.div`
     
     a{  
         margin-bottom: 2rem;
+    }
+      visibility: visible;
+    }
+}
+@media screen and (max-height: 480px) {
+    .menu{flex-direction: column;
+    height: 10em;
+    margin-top: 350px;
+    justify-content: center;
+    margin-bottom: 4rem;
+    a{  
+        margin-bottom: 1rem;
     }
       visibility: visible;
     }
