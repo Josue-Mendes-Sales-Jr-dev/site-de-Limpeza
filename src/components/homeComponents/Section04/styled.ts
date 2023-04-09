@@ -9,6 +9,28 @@ export const Container=styled.div`
   width: 100%;
   min-height: 100vh;
   margin: 100px 0;
+  position: relative;
+  .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: visible;
+      position: absolute;
+      cursor: pointer;
+      bottom:-90px;
+      font-size: 2rem;
+      z-index: 1;
+      right:10px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--greenSite);
+      border-radius: 50%;
+      :hover{
+         .up{
+            color: white;
+         }
+      }
+   }
   img{
     width:50%;
     height: 50%;

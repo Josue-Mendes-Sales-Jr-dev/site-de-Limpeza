@@ -7,6 +7,27 @@ export const Container=styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: visible;
+      position: fixed;
+      cursor: pointer;
+      bottom:10px;
+      font-size: 2rem;
+      z-index: 1;
+      right:10px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--greenSite);
+      border-radius: 50%;
+      :hover{
+         .up{
+            color: white;
+         }
+      }
+   }
   .tarja{
     display: flex;
     align-items: center;

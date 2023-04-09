@@ -8,6 +8,8 @@ export const Container=styled.div`
    justify-content:center;
    flex-direction:column;
    color:white;
+   position: relative;
+   z-index: 3;
    
 `
 export const Box=styled.div`
@@ -102,7 +104,7 @@ export const Box=styled.div`
             }
      }
     
-  }
+  }}
 `
 export const BoxFooter=styled.div`
    width: 100vw;

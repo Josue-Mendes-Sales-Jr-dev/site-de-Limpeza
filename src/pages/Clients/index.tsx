@@ -1,11 +1,19 @@
 import { Container,Box } from "./styled"
 import { Title } from "../../components/Title"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback} from "react"
 
 
 export const Clients =()=>{
+    const handleUp=useCallback(()=>{
+        if(scrollY>200){
+          scrollTo(0,0)
+        }
+      },[])
     return(
         <Container>
             <Title text1="Clientes " text2="Parceiros"/>
+            <button className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
             <div className="tarja">
             <h3>
                 OS NOSSOS CLIENTES SÃO MUITO IMPORTANTES PARA NÓS.

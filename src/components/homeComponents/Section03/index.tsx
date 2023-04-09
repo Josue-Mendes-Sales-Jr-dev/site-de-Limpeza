@@ -1,9 +1,16 @@
 import { Card } from "./Card"
 import {Container, Box} from "./styled"
-import { Link } from "react-router-dom"
+import { useCallback} from "react"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+
 
 
 export const Section03=()=>{
+  const handleUp=useCallback(()=>{
+    if(scrollY>200){
+      scrollTo(0,0)
+    }
+  },[])
     return(
         <>
         <Container>
@@ -12,6 +19,7 @@ export const Section03=()=>{
                 Os Services
               </h2>
             </header>
+            <button className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
             <Box>
               <Card/>
               <Card/>

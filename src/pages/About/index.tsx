@@ -1,11 +1,25 @@
 import { CardAbout } from "../../components/AboutComponents/Card"
 import { Title } from "../../components/Title"
 import { Container,TextBox,Section} from "./styled"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback} from "react"
+
+
+
+  
+
+  
 export const About=()=>{
-    
+    const handleUp=useCallback(()=>{
+        if(scrollY>200){
+          scrollTo(0,0)
+        }
+      },[])
     return(
         <Container>
             <Title text1="Quem" text2="Somos"/>
+            <button className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
+
             <div className="TextP">
                 <p>
                     <strong>

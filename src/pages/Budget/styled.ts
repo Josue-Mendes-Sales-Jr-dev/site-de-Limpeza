@@ -7,6 +7,28 @@ export const Container=styled.div`
   justify-content: center;
   align-items:center;
   flex-direction: column;
+  padding-bottom: 80px;
+  .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: visible;
+      position: fixed;
+      cursor: pointer;
+      bottom:10px;
+      font-size: 2rem;
+      z-index: 1;
+      right:10px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--greenSite);
+      border-radius: 50%;
+      :hover{
+         .up{
+            color: white;
+         }
+      }
+   }
   .CBox{
     display: flex;
     justify-content: center;
@@ -52,7 +74,7 @@ export const Box=styled.div`
     }
   }
   @media screen and (max-height:420px){
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
 `

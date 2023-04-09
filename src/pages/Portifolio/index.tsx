@@ -1,6 +1,8 @@
 import { CardBox } from "../../components/PortifolioComponents/CardsBox"
 import { Title } from "../../components/Title"
 import { Container,Box,CardsBox } from "./styled"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback} from "react"
 
 export const Portifolio=()=>{
     const box=document.getElementById('box')
@@ -12,10 +14,17 @@ export const Portifolio=()=>{
          
     }
 
+    const handleUp=useCallback(()=>{
+        if(scrollY>200){
+          scrollTo(0,0)
+        }
+      },[])
     return(
+
         <>
         <Container>
             <Title text1="" text2="Portifolio"/>
+            <button className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
              <Box>
                 <nav>
                     <ul>

@@ -1,8 +1,19 @@
 import {Container,Box} from "./styled"
 import { Link } from "react-router-dom"
 import Image from "../../../assets/imgs/pexels01.jpg"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback} from "react"
+
+
+
+  
 
 export const Section04=()=>{
+    const handleUp=useCallback(()=>{
+        if(scrollY>200){
+          scrollTo(0,0)
+        }
+      },[])
     return(
         <Container>
             <img src={Image} alt="" />

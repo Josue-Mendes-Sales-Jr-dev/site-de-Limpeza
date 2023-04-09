@@ -1,12 +1,20 @@
 import { Title } from "../../components/Title"
 import { Container } from "./styled"
-
-
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback} from "react"
+  
 
 export const Legislation =()=>{
+    const handleUp=useCallback(()=>{
+    if(scrollY>200){
+      scrollTo(0,0)
+    }
+  },[])
     return(
     <Container>
             <Title text1="" text2="Legislação"/>
+            <button className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
+
             <div className="box">
               <h2 >
               DECRETO-LEI N.º220/2008, DE 12 de NOVEMBRO | REGIME JURÍDICO DA SEGURANÇAS CONTRA INCÊNDIOS EM EDIFÍCIOS

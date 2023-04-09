@@ -6,26 +6,6 @@ export const Container=styled.div`
    background-color: aliceblue;
    overflow: hidden;
    
-   button{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      visibility: visible;
-      position: fixed;
-      cursor: pointer;
-      top:550px;
-      font-size: 2rem;
-      z-index: 0;
-      right:10px;
-      width: 50px;
-      height: 50px;
-      background-color: var(--greenSite);
-      border-radius: 50%;
-      :hover{
-         .up{
-            color: white;
-         }
-      }
-   }
+   
 `
 
