@@ -66,6 +66,11 @@ export const Form=styled.div`
   padding:30px 0;
   background: none;
   gap: 1rem;}
+  input{
+    width:30rem;
+
+
+  }
   .Cform{
     color: var(--greenSite);
     padding:40px 0;
@@ -128,6 +133,7 @@ export const Form=styled.div`
 
 
     input{
+    width:18rem;
     height: 2rem;
     padding: 0 10px;
     border-bottom: 2px solid gray;
@@ -143,7 +149,6 @@ export const Form=styled.div`
     width: 150px;
     height: 2.5rem;
     font-size: 1.1rem;
-   
     margin: 20px 0;
   }
 

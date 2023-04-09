@@ -30,7 +30,7 @@ export const Container=styled.div`
 `
 export const Section01=styled.section`
   height:100vh;
-  margin-top: -200px;
+  margin-top: -50px;
   background-color:#131313;
   position:relative;
   width: 100vw;

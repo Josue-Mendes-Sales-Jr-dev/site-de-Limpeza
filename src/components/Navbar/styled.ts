@@ -103,7 +103,7 @@ export const Menu=styled.div`
 `
 export const Position=styled.div`
     position:relative;
-     z-index:2;
+     z-index:1;
      display:flex;
     align-items:center;
     justify-content:space-around;
@@ -111,7 +111,8 @@ export const Position=styled.div`
      color:var(--greenSite);
 
      
-     a{ color: var(--blackSite);
+     a{ color: black;
+        font-weight: 500;
         font-size:1.25rem;
         text-decoration:none;
         :hover{
