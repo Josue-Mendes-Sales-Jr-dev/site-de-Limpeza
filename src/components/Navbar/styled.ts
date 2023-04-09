@@ -161,8 +161,9 @@ export const Position=styled.div`
 }
 `
 export const Hamburguer=styled.div`
-  visibility: hidden;
- @media screen and (max-width:850px){ display: flex;
+  display: none;
+ @media screen and (max-width:850px){ 
+    display: flex;
     visibility: visible;
    align-items: center;
    justify-content: center;
