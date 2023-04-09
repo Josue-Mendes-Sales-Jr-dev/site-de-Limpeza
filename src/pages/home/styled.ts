@@ -45,14 +45,14 @@ export const Section01=styled.section`
     width:90%;
     height: 90%;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     top: 250px;
   }
 
   @media screen and (max-width: 850px) {
    
     .local{
-      z-index:1;
+      z-index:0;
     } width: 100%;
     video{
       height: 100vh;
