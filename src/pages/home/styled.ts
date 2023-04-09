@@ -25,7 +25,29 @@ export const Container=styled.div`
   width:100%;
   height: 100%;
   margin-top:-145px;
-
+  .r{
+    visibility: hidden;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    position: fixed;
+    cursor: pointer;
+    bottom:10px;
+    font-size: 2rem;
+    z-index: 100;
+    right:10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    :hover{
+       .up{
+          color: white;
+       }
+    }
+ }
 
 `
 export const Section01=styled.section`
@@ -35,6 +57,8 @@ export const Section01=styled.section`
   position:relative;
   width: 100vw;
   overflow:hidden;
+
+  
   video{
     opacity:0.5;
      height: 100vh;

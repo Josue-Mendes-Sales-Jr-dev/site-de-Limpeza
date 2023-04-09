@@ -3,12 +3,28 @@ import { Section02 } from "../../components/homeComponents/Section02"
 import { Section03 } from "../../components/homeComponents/Section03"
 import { Section04 } from "../../components/homeComponents/Section04"
 import video from "../../assets/videos/video1.mp4"
-import {Link} from "react-router-dom"
+import {Link, useFetcher} from "react-router-dom"
+import {BsFillArrowUpCircleFill} from "react-icons/bs"
+import {useCallback, useEffect} from "react"
 
 
 export const Home =()=>{
+    useEffect(()=>{
+        const btn =document.getElementById('btn')
+    if(scrollY>600){
+       btn?.classList.add("r")
+    }
+    },[])
+    
+    const handleUp=useCallback(()=>{
+        if(scrollY>200){
+          scrollTo(0,0)
+        }
+      },[])
     return(
        <Container>
+        <button id="btn" className="btn" onClick={handleUp}><BsFillArrowUpCircleFill className="up"/></button>
+
          <Section01>
           <video loop muted autoPlay>
               <source src={video} type="video/mp4"/>

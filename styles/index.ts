@@ -9,6 +9,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing:border-box;
     list-style-type:none;
+    
   }
   html,body,:root{
     max-width: 100vw;
@@ -21,5 +22,9 @@ export default createGlobalStyle`
     --greenHoverSite:#23f169;
     --graySite:#c6c6c6;
   
+  }
+  button{
+    background-color: transparent;
+    border: #16161A;
   }
 `

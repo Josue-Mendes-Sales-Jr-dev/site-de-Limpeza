@@ -21,7 +21,6 @@ export const Container=styled.div`
       right:10px;
       width: 50px;
       height: 50px;
-      background-color: var(--greenSite);
       border-radius: 50%;
       :hover{
          .up{
