@@ -21,7 +21,7 @@ export const Home =()=>{
                                <h2 className="h03"><Link to="/">Alerozes</Link></h2>
                                <div className="LBox">
                   <Link className="BTNServices" to="/">Serviços</Link>
-                  <Link className="BTNOrcament" to="/">Pedir orçamento</Link>
+                  <Link className="BTNOrcament" to="/Budget">Pedir orçamento</Link>
                                </div>
               </div>
           </TextBox>
